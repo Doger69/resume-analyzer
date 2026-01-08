@@ -1,92 +1,75 @@
-📄 Resume–Job Match Analyzer
+# Resume–Job Match Analyzer 🚀
 
-A professional web application that analyzes how well a resume matches a job description using **Natural Language Processing (NLP)**. The system computes a match score and provides clear visual feedback to help job seekers optimize their resumes.
+A professional, ATS-style resume evaluation tool built with **Python, NLP, and Streamlit**.  
+This application analyzes how well a resume matches a given job description and provides
+actionable insights, visual analytics, and a downloadable PDF report.
 
-🚀 Features
+## 🔍 Key Features
 
-* Upload resume in **PDF format**
-* Paste any **job description**
-* Calculates match score using **TF-IDF + Cosine Similarity**
-* Modern progress bar visualization
-* Clear feedback: Low / Moderate / Excellent match
-* Clean, professional UI built with **Streamlit**
-* Lightweight and fast (no external APIs)
+- 📄 **Resume Parsing (PDF)**
+- 🧠 **NLP-based Similarity Analysis (TF-IDF + Cosine Similarity)**
+- 🤖 **ATS Compatibility Score**
+- 🧩 **Keyword Gap Analysis (Missing Skills)**
+- 💡 **Resume Improvement Suggestions**
+- 📊 **Modern Dashboard UI**
+  - Progress bars
+  - Donut chart
+  - Card-based layout
+  - Professional typography
+  
+- 📄 **Export Detailed PDF Report**
 
-🛠️ Tech Stack
+## 🖥️ Tech Stack
 
-* **Frontend:** Streamlit, Custom CSS
-* **Backend / NLP:** Python, Scikit-learn, NLTK
-* **PDF Processing:** PyPDF2
-* **Algorithm:** TF-IDF, Cosine Similarity
+- **Python**
+- **Streamlit** – Web UI
+- **NLTK** – Text preprocessing
+- **Scikit-learn** – TF-IDF & similarity
+- **PyPDF2** – Resume text extraction
+- **Matplotlib** – Charts & graphs
+- **FPDF** – PDF report generation
 
-📁 Project Structure
-
-```
+## 📂 Project Structure
 resume_matcher/
 │
-├── app.py              # Frontend (UI + layout)
-├── utils.py            # Backend logic (text processing & similarity)
-├── requirements.txt    # Dependencies
+├── app.py # Main Streamlit application
+├── utils.py # NLP, similarity & ATS logic
+├── pdf_report.py # PDF report generation
+├── requirements.txt # Dependencies
 └── README.md
-```
 
-⚙️ Installation & Setup
+## ▶️ How to Run Locally
 
-1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository
+git clone https://github.com/your-username/resume_matcher.git
+cd resume_matcher
 
-```bash
-git clone https://github.com/your-username/resume-job-match-analyzer.git
-cd resume-job-match-analyzer
-```
+2️⃣ (Optional) Create Virtual Environment
+python -m venv venv
+venv\Scripts\activate
 
-2️⃣ Install Dependencies
-
-```bash
+3️⃣ Install Dependencies
 pip install -r requirements.txt
-```
 
-3️⃣ Run the Application
-
-```bash
+4️⃣ Run the Application
 streamlit run app.py
-```
 
-The application will open in your browser at:
 
-```
+The app will open at:
 http://localhost:8501
-```
 
-📊 How It Works
+🧪 How It Works
+Upload a PDF resume
+Paste a job description
+Click Analyze Match
 
-1. Resume text is extracted from the uploaded PDF
-2. Job description text is cleaned and preprocessed
-3. Both texts are converted into **TF-IDF vectors**
-4. **Cosine similarity** is calculated between them
-5. A match percentage is displayed with visual feedback
+View:
+Match score
 
-🧠 Algorithm Used
+ATS score
 
-* **TF-IDF (Term Frequency–Inverse Document Frequency)**
-* **Cosine Similarity**
+Missing keywords
 
-These techniques are commonly used in:
-* Applicant Tracking Systems (ATS)
-* Resume screening tools
-* Text similarity analysis
+Improvement suggestions
 
-🎯 Use Cases
-
-* Students and fresh graduates
-* Job seekers optimizing resumes
-* Learning NLP and text similarity
-* Portfolio project for software or data roles
-
-🔮 Future Enhancements
-
-* Keyword gap analysis
-* Resume improvement suggestions
-* ATS-style scoring
-* Export results as PDF
-* Deployment to Streamlit Cloud
-
+Download a professional PDF report
