@@ -1,5 +1,6 @@
 streamlit
 scikit-learn
-matplotlib
-PyPDF2
 nltk
+PyPDF2
+matplotlib
+fpdf
