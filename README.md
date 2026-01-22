@@ -45,19 +45,7 @@ A full-stack web application that analyzes resumes against job descriptions and 
 7. Missing and matched skills are returned
 8. Frontend displays results visually
 
----
 
-## 🖼️ Screenshots
-
-> *(Add screenshots here later)*
-> Example:
-
-```
-/screenshots/dashboard.png
-/screenshots/upload.png
-```
-
----
 
 ## 📁 Project Structure
 
