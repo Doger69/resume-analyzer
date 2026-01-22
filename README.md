@@ -1,17 +1,6 @@
-Perfect question — a **strong README** makes your project look *seriously professional* on GitHub and during reviews/interviews.
-
-Below is a **complete, industry-style README** tailored exactly to your project.
-You can **copy-paste this directly into `README.md`**.
-
----
-
 # 📄 Resume Match Analyzer (ATS Score Checker)
 
 A full-stack web application that analyzes resumes against job descriptions and calculates an **ATS-style match score**, highlights **missing skills**, and provides **actionable insights** to improve resume shortlisting chances.
-
-Inspired by tools like **ResumeWorded**, this project demonstrates real-world resume screening logic used by recruiters and Applicant Tracking Systems (ATS).
-
----
 
 ## 🚀 Features
 
